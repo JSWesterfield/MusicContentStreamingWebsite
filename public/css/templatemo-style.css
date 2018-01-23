@@ -856,7 +856,7 @@ footer .connect-us h4 {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 }
 
 footer .connect-us ul li {
@@ -1033,3 +1033,4 @@ footer .connect-us ul li a:hover {
 	}
 
 }
+
