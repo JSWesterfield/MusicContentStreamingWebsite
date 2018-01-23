@@ -1010,12 +1010,12 @@ footer p em {
 
 @media (max-width: 768px) {
 
-
-	
 }
 
 @media (max-width: 480px) {
 
+}
 
-
+#form-submit:hover, #home-button:hover, .scroll-top:hover  {
+	background-color: #eeca3b;
 }
