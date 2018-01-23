@@ -14,7 +14,7 @@ http://www.tooplate.com/view/2093-flight
 
 body {
 	overflow-x: hidden;
-	background-color: #fff;
+	background-color: #b6b6b6;
 }
 
 ul {
@@ -27,15 +27,6 @@ p {
 	line-height: 24px;
 }
 
-.section-heading h2 {
-	margin-top: 0px;
-	margin-bottom: 60px;
-	text-align: center;
-	font-size: 24px;
-	text-transform: uppercase;
-	font-weight: 900;
-	color: #121212;
-}
 
 .page-direction-button a {
 	display: inline-block;
@@ -739,7 +730,6 @@ p {
 }
 
 
-
 footer {
 	text-align: center;
 	background-color: #1f3646;
@@ -790,11 +780,6 @@ footer p em {
 	color: #ffe165;
 }
 
-
-
-
-
-
 .page-heading {
 	background-image: url(../img/custom/heading-bg.jpg);
 	background-repeat: no-repeat;
@@ -816,7 +801,7 @@ footer p em {
 
 .contact-us .section-heading h2 {
 	margin-top: 100px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .contact-us .section-heading p {
@@ -896,15 +881,6 @@ footer p em {
 	border-radius: 0px;
 }
 
-
-.map {
-	background-color: #f4f4f4;
-	padding: 100px 0px;
-}
-
-
-
-
 @media (max-width: 991px) {
 
 	.banner .left-side {
@@ -941,63 +917,7 @@ footer p em {
 		margin: 30px 30px;
 	}
 
-	#weather .tabs li {
-		display: block;
-		text-align: center;
-		width: 100%;
-		margin: 0px 0px;
-	}
-
-	#weather .tabs a {
-	  display:block;
-	  color:#fff;
-	  font-size: 13px;
-	  display: block;
-	  width: 100%;
-	  height: 60px;
-	  line-height: 60px;
-	  padding-left: 0px;
-	  text-align: center;
-	}
-
-	#weather .weather-item {
-		margin-bottom: 30px;
-	}
-
-	.weathergroup {
-		padding: 30px 30px 10px 30px;
-	}
-
-	.service-item {
-		margin: 30px 0px; 
-	}
-
-	.page-heading .logo {
-		padding: 60px 0px;
-		text-align: center;
-	}
-
-	.page-heading .page-direction-button {
-		text-align: center;
-		margin-top: 0px;
-	}
-
-	.weather-item h6 {
-		margin-bottom: 30px;
-	}
-
-	.weather-item .weather-icon {
-		margin-bottom: 20px;
-	}
-
-	.weather-item ul {
-		margin-top: 20px;
-		padding: 20px 10px;
-	}
-
-	.weather-item ul li {
-		margin: 0px 5px;
-	}
+	
 
 	footer ul li {
 		margin-bottom: 10px!important;
@@ -1016,3 +936,31 @@ footer p em {
 #form-submit:hover, #home-button:hover, .scroll-top:hover  {
 	background-color: #eeca3b;
 }
+
+.billboard-section {
+    color: #fff;
+    text-align: center;
+    background-image: url('../img/custom/contact-bg.jpg');
+    border: 1px solid #1d1c1c;
+}
+
+.section-heading {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.billboard-icon {
+   margin-right: 10px; 
+}
+
+#billboard-title {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300px;
+    text-shadow: 2px 2px #272525;
+}
+
+#top-ten-title {
+    border: 2px solid red;    
+}
+
