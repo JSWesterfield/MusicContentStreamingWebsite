@@ -18,6 +18,43 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+// set the weather page route
+app.get('/weather', function(req, res) {
+
+    //ejs render automatically looks in the views folder for the weather page
+    res.render('weather');
+});
+
+// set the weather page route
+app.get('/billboard', function(req, res) {
+
+    //ejs render automatically looks in the views folder for the top Billboard 100 page
+    res.render('billboard');
+});
+
+// set the weather page route
+app.get('/blog', function(req, res) {
+
+    //ejs render automatically looks in the views folder for the blog page
+    res.render('blog');
+});
+
+// set the weather page route
+app.get('/flight', function(req, res) {
+
+    //ejs render automatically looks in the views folder for the flight page
+    res.render('flight');
+});
+
+// set the weather page route
+app.get('/contact', function(req, res) {
+
+    //ejs render automatically looks in the views folder for the contact page
+    res.render('contact');
+});
+
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port + ' ' + 'press Ctrl + C, to exit/terminate ');
 });
+
+

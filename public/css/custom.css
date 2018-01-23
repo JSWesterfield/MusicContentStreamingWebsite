@@ -2,5 +2,18 @@
     color: #00FFFF;
 }
 
+#left-map {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: -7px;
+}
 
+#right-map {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -7px;
+}
 
+.logo {
+    margin-bottom: 10px;
+}
