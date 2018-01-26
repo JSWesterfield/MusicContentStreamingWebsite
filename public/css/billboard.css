@@ -935,6 +935,7 @@ footer p em {
 
 #form-submit:hover, #home-button:hover, .scroll-top:hover  {
 	background-color: #eeca3b;
+	opacity: 0.9;
 }
 
 .billboard-section {
@@ -949,10 +950,6 @@ footer p em {
     margin-bottom: 75px;
 }
 
-.billboard-icon {
-   margin-right: 10px; 
-}
-
 #billboard-title {
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -964,8 +961,20 @@ footer p em {
     border: 2px solid red;    
 }
 
+.billboard-icon {
+	margin-right: 10px; 
+ }
+ 
 #billboard-icon {
 	width: 100px;
 	height: 100px;
 	box-shadow: 3px 3px 3px #888888;
+	opacity: 0.90;
+}
+
+#billboard-icon:hover {
+	width: 100px;
+	height: 100px;
+	box-shadow: 3px 3px 3px #888888;
+	opacity: 0.80;
 }

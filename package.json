@@ -13,6 +13,7 @@
     "express": "~4.9.8"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "webpack": "3.10.0"
   }
 }
