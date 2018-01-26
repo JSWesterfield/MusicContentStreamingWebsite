@@ -964,3 +964,8 @@ footer p em {
     border: 2px solid red;    
 }
 
+#billboard-icon {
+	width: 100px;
+	height: 100px;
+	box-shadow: 3px 3px 3px #888888;
+}
