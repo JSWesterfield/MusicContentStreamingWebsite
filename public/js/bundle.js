@@ -65,9 +65,24 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackMissingModule() { throw new Error("Cannot find module \"/main.js\""); }());
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-console.log('Welcome from webpack');
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\User\\Desktop\\Personal_Projects\\TruMusik\\main.js'");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\User\\Desktop\\Personal_Projects\\TruMusik\\bundle.js'");
 
 /***/ })
 /******/ ]);
