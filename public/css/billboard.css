@@ -221,7 +221,7 @@ footer p em a:hover {
 }
 
 .page-heading {
-	background-image: url(../img/custom/heading-bg.jpg);
+	background-image: url(../img/custom/futuristic.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -354,8 +354,8 @@ footer p em a:hover {
 }
 
 #billboard-icon:hover {
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 	box-shadow: 3px 3px 3px #888888;
 	opacity: 0.80;
 }
