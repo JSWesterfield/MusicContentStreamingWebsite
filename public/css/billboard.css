@@ -229,7 +229,7 @@ footer p em a:hover {
 	position: relative;
 	border-bottom: 2px solid #00e0fd;
 	 /*1)length right of shadow,2)length of bottom ,3)blur,4.)overall shadow, 5)shadow color  */
-	box-shadow: 2px 2px 12px 2px #ffffff;
+	box-shadow: 1px 1px 10px 1px #ffffff;
 }
 
 .page-heading .logo {
