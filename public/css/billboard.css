@@ -38,7 +38,8 @@ p {
 	height: 60px;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
-	background: #2a2b2c;
+	background: #00e0fd;
+	opacity: 0.9;
 	font-size: 18px;
 	font-weight: 700;
 	color: #121212;
@@ -237,7 +238,7 @@ footer p em a:hover {
 }
 
 .page-heading .logo {
-	padding: 60px 0px;
+	padding: 50px 0px;
 	text-align: left;
 }
 
@@ -266,7 +267,7 @@ footer p em a:hover {
 	}
 
 	.banner .page-direction-button {
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 
 	.banner .logo img {
@@ -317,7 +318,6 @@ footer p em a:hover {
 
 .billboard-section {
     color: #fff;
-	text-align: center;
 	background: black;
 	border: 1px solid #00e0fd;
 	 /*1)length right of shadow,2)length of bottom ,3)blur,4.)overall shadow, 5)shadow color  */
@@ -330,22 +330,38 @@ footer p em a:hover {
     margin-bottom: 6px;
 }
 
-#billboard-title {
+#chart-title {
 	font-family: 'Libre Barcode 39 Text'!important;
     letter-spacing: 2px;
     text-transform: uppercase;
-	font-weight: 400px;
 	font-size: 50px;
+	font-weight: 500;
 	text-shadow: 2px 2px #272525;
+	text-align: center;
 }
 
-#top-ten-title {
-	/* border: 2px solid #cb01dd;  */
+#chart-title_border {
 	border: 2px solid #cb01dd;  
 	border-radius: 2px;
 	 /*1)length right of shadow,2)length of bottom ,3)blur,4.)overall shadow, 5)shadow color  */
 	box-shadow: 1px 1px 8px 4px #ffffff;  
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
+
+/* Set subtitle style, outside of color above in chart-title_border? shruggs.*/
+#chart-title_subtitle {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 200;
+}
+/* #chart-title__subtitle {
+	text-align: center!important;
+	margin-left: 10px;
+	padding 
+	color: red!important;
+} */
 
 .chart-row {
     position: relative;
@@ -398,12 +414,6 @@ footer p em a:hover {
 
 /*change to billboard ids, chart-row_img */
 .chart-row__image {
-	/* margin-right: 5px;
-	margin-top: 6px;
-	margin-bottom: 6px;
-	margin-left: 0px;
-	width: 100px;
-	height: 100px; */
 	background-color: grey;
     background-image: url(../images/chart-row-placeholder.jpg?08a860a…);
     background-repeat: no-repeat;
@@ -412,22 +422,27 @@ footer p em a:hover {
     background-size: cover;
     float: left;
     vertical-align: top;
-    width: 100px;
-    height: 100px;
-    margin: 12px 12px;
+    width: 120px;
+    height: 120px;
+	margin: 12px 12px;
 }
 
-.chart-row__song { 
+h2.chart-row__song { 
 	color: #fff;
-	font-size: 2px!important; 
-	line-height: 1em; 
+	font-size: 28px!important; 
+	font-weight: 300!important;
+	line-height: 1em;
+	margin-top: 10px!important;
+	margin-bottom: 2px!important; 
+	text-align: left;
 }
 
-.chart-row__artist { 
+span.chart-row__artist { 
 	color: #fff;
-	font-size: 10px; 
-	line-height: 1em; 
-	margin-top: 1px; 
+	font-size: 17px; 
+	line-height: 1.2em; 
+	margin-top: 0px; 
+	text-align: left;
 	text-decoration: none; 
 		text-decoration-line: none;
 		text-decoration-style: none;
