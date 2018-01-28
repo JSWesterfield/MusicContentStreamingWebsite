@@ -17,8 +17,12 @@
         <link rel="stylesheet" href="css/billboard.css">
 
 
+        <!-- Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -50,7 +54,7 @@
                     <form id="contact" action="#" method="post">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="section-heading" id="top-ten-title">
+                                <div class="section-heading" id="top-ten-title">                                  
                                     <h1 id="billboard-title">Billboard Top 10</h1>
                                     <!-- We use the super cool unofficial Billboard API, http://billboard.modulo.site/--> 
                                     <h4><i>Powered by the Billboard API</i></h4>
@@ -72,10 +76,13 @@
                                 <div class="section-heading">
                                     <h2>
                                         <!-- Image of artist from Billboard API-->
-                                        <img src="img/custom/service-icon-01.png" class="billboard-icon">
+                                        <img src="img/custom/billboard-artists/camilacabello.jpg" class="chart-row__image">
                                         </img>
+                                        <!-- Artist song-->
+                                        <i class="chart-row_song">Havana</i>
                                         <!-- Artist Name from Billboard API -->
-                                        <i class="billboard-artist">Billboard Top Artist #1</i>
+                                        <i class="chart-row_artist">Camila Cabello Ft. Young Thug</i>
+                                        
                                     </h2>
                                 </div>
                             </div>
@@ -95,10 +102,23 @@
                         <div class="col-md-12">
                             <div class="section-heading">
                                 <h2>
+                                    <!-- <div class="chart-row__rank">
+                                        <span class="chart-row__current-week">3</span>
+                                        <span class="chart-row__last-week">Last Week: 4</span>
+                                    </div>     -->
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
-                                    <!-- Artist Name from Billboard API -->
-                                    <i class="billboard-artist">Billboard Top Artist #2</i>
+                                    <!-- <div class="chart-row__image" style="background-image: url(https://charts-static.billboard.com/img/2017/01/post-malone.jpg)">
+                                    </div> -->
+                                    <div class="chart-row_image">
+                                            <img src="img/custom/billboard-artists/Ed-sheeran.jpg" class="chart-row__image">
+                                        </div>
+                                        <div class="chart-row_title">
+                                            <h2 class="chart-row_song">Perfect</h2>
+                                            <span class="chart-row_artist">
+                                                Ed Sheeran
+                                            </span>
+                                        </div>
+                                    </div> 
                                 </h2>
                             </div>
                         </div>
@@ -117,10 +137,31 @@
                         <div class="col-md-12">
                             <div class="section-heading">
                                 <h2>
-                                    <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
-                                    <!-- Artist Name from Billboard API -->
-                                    <i class="billboard-artist">Billboard Top Artist #3</i>
+                                    <div class="chart-row__primary">
+                                        <!-- <div class="chart-row__history chart-row__history-rising">
+                                            <div class="chart-row__rank">
+                                                <span class="chart-row__current-week">3</span>
+                                                <span class="chart-row__last-week">Last Week: 4</span>
+                                            </div>    
+                                        </div>     -->
+                                        <div class="chart-row_main-display">
+                                            <!-- Artist Image from Billboard API background-image: url(../img/custom/heading-bg-tron-vectors.png);-->
+                                            <div class="chart-row__image" style="background-image: url(../img/custom/billboard-artists/post-malone.jpg)">
+                                            </div>
+                                            <!-- <div class="chart-row_image">
+                                                <img src="img/custom/billboard-artists/post-malone.jpg" class="chart-row__image">
+                                            </div> -->
+                                            <div class="chart-row_container">
+                                                <div class="chart-row_title">
+                                                    <h2 class="chart-row_song">Rockstar</h2>
+                                                    <span class="chart-row_artist">
+                                                        Post Malone Featuring 21 Savage
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </h2>
                             </div>
                         </div>
@@ -139,12 +180,15 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-heading">
-                                    <h2>
+                                    <div>
                                         <!-- Artist Image from Billboard API -->
-                                        <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
-                                        <!-- Artist Name from Billboard API -->
-                                        <i class="billboard-artist">Billboard Top Artist #4</i>
-                                    </h2>
+                                        <img src="img/custom/billboard-artists/brunomars.jpg" class="chart-row__image"></img>
+                                        <div >
+                                            <span>Finnese</span>
+                                            <!-- Artist Name from Billboard API -->
+                                            <span class="billboard-artist">Bruno Mars Ft. Cardi B</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +208,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/halsey.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #5</i>
                                 </h2>
@@ -187,7 +231,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/imagine-dragons.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #6</i>
                                 </h2>
@@ -210,7 +254,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/camilacabello.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #7</i>
                                 </h2>
@@ -233,7 +277,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/camilacabello.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #8</i>
                                 </h2>
@@ -256,7 +300,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/camilacabello.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #9</i>
                                 </h2>
@@ -278,7 +322,7 @@
                             <div class="section-heading">
                                 <h2>
                                     <!-- Artist Image from Billboard API -->
-                                    <img src="img/custom/service-icon-01.png" class="billboard-icon"></img>
+                                    <img src="img/custom/billboard-artists/camilacabello.jpg" class="chart-row__image"></img>
                                     <!-- Artist Name from Billboard API -->
                                     <i class="billboard-artist">Billboard Top Artist #10</i>
                                 </h2>
