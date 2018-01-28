@@ -12,10 +12,6 @@ http://www.tooplate.com/view/2093-flight
     font-family: 'Poppins', arial, sans-serif;
 }
 
-/* div,button,span,strong {
-	font-family: 'Open Sans', arial, sans-serif;
-} */
-
 body {
 	overflow-x: hidden;
 	color: black;
@@ -247,8 +243,98 @@ footer p em a:hover {
 	margin-top: 110px;
 }
 
-@media (max-width: 991px) {
+@media only screen and (min-width: 1024px) {
+	.chart-row__rank .chart-row__current-week, .chart-row__last-week {
+		display: block;
+	}
+	
+	.chart-row__main-display {
+		display: block;
+		margin-left: 96px;
+	}
 
+	.chart-row__rank {
+		margin-top: 30px;
+	}
+
+	.chart-row__current-week {
+		font-size: 45px;
+		margin-left: 95px;
+		margin-top: 10px;
+	}
+
+	span.chart-row__last-week {
+		font-size: 13px;
+		background-color: transparent;
+		color: #868383;
+		width: 100px;
+		margin-left: 55px;
+		margin-top: 20px;
+	}
+
+}
+
+@media (max-width: 1023px) { 
+	span.chart-row__last-week {
+		width: 40px;
+		height: 62px;
+		margin-left: 5px;
+		font-size: 10px;
+		background-color: transparent;
+		color: #868383;
+	}
+
+	.chart-row__current-week {
+		width: 50px;
+		height: 30px;
+	}
+
+	.chart-row__rank, .chart-row__last-week, .chart-row__current-week {
+		display: block;
+		position: relative;
+		float: left;
+		left: 0;
+		font-size: 1em;
+		line-height: 1;
+		text-align: center;
+	} 
+}
+
+@media (max-width: 1000px) {
+	.chart-row__rank, .chart-row__last-week, .chart-row__current-week {
+		display: block;
+		position: relative;
+		float: left;
+		left: 0;
+		line-height: 1;
+		text-align: center;
+	} 
+	
+	.chart-row__rank {
+		width: 40px;
+		height: 40px;
+		font-size: 10px;
+		background-color: transparent;
+	}
+
+	span.chart-row__last-week {
+		width: 40px;
+		height: 40px;
+		
+		background-color: transparent;
+		color: #868383;
+	}
+	
+	.chart-row__current-week {
+		width: 50px;
+		height: 50px;
+		font-size: 15px;
+		background-color: transparent;
+		color: #fff;
+	}
+}
+
+@media (max-width: 991px) {
 	.banner .left-side {
 		text-align: center;
 		overflow: hidden;
@@ -283,19 +369,18 @@ footer p em a:hover {
 		margin: 30px 30px;
 	}
 
-	
 	footer ul li {
 		margin-bottom: 10px!important;
 	}
 		
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 480px) {
+	
 }
 
-@media (max-width: 480px) {
-
+.chart-row__main-display {
+	overflow: hidden;
 }
 
 .scroll-top:hover  {
@@ -322,6 +407,18 @@ footer p em a:hover {
 	border: 1px solid #00e0fd;
 	 /*1)length right of shadow,2)length of bottom ,3)blur,4.)overall shadow, 5)shadow color  */
 	box-shadow: 5px 5px 14px 6px #ffffff;
+	letter-spacing: 1px;
+}
+
+/* ON hover of a section turn into neon pink instead of the neon turquoise */
+.billboard-section.chart:hover {
+    color: #fff;
+	background: black;
+	border: 1px solid #cb01dd;
+	border-top: 1px solid #cb01dd;
+	border-bottom: 1px solid #cb01dd;
+	border-right: 7px solid #cb01dd;
+	border-left: 7px solid #cb01dd;
 	letter-spacing: 1px;
 }
 
@@ -356,16 +453,10 @@ footer p em a:hover {
 	font-size: 17px;
 	font-weight: 200;
 }
-/* #chart-title__subtitle {
-	text-align: center!important;
-	margin-left: 10px;
-	padding 
-	color: red!important;
-} */
 
 .chart-row {
     position: relative;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #fff;
     border-bottom: 1px solid transparent;
     font-family: 'Poppins', verdana, sans-serif;
 }
@@ -382,37 +473,40 @@ footer p em a:hover {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #E7E7E7;
+	/* background-color: #b1adad; */
+	background: linear-gradient(#b1adad, #3b3b3b);
 }
 
-/* .chart-row__history-rising {
-
-} */
-
-/* change to billboard ids, chart-row_current-week*/
-#chart-row__rank {
-	/* width: 112px;
-	height: 62px;
-	color: #fff; */
+.chart-row__history:hover {
+	width: 48px;
 	position: absolute;
-    float: left;
     left: 0;
-    top: 18px;
-    font-size: 2em;
-    line-height: 1;
-    text-align: center;
-    width: 48px;
-} 
-
-.chart-row__last-week {
-	color: #868383;
+    top: 0;
+    bottom: 0;
+	background-color: #cb01dd;
 }
 
-.chart-row__main-display {
-	overflow: hidden;
+/* Arrow icons from Font Awesome */
+.fa-arrow-up {
+	color: green;
+	width: 40px;
+	height: 40px;
+	margin-top: 2px;
+	float: right;
+	text-align: center;
+	position: relative;
 }
 
-/*change to billboard ids, chart-row_img */
+.fa-arrow-down {
+	color: red;
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	float: right;
+	text-align: center;
+	position: relative;
+}
+
 .chart-row__image {
 	background-color: grey;
     background-image: url(../images/chart-row-placeholder.jpg?08a860a…);
@@ -430,7 +524,7 @@ footer p em a:hover {
 h2.chart-row__song { 
 	color: #fff;
 	font-size: 28px!important; 
-	font-weight: 300!important;
+	font-weight: 500!important;
 	line-height: 1em;
 	margin-top: 10px!important;
 	margin-bottom: 2px!important; 
@@ -440,6 +534,7 @@ h2.chart-row__song {
 span.chart-row__artist { 
 	color: #fff;
 	font-size: 17px; 
+	font-weight: 100;
 	line-height: 1.2em; 
 	margin-top: 0px; 
 	text-align: left;
