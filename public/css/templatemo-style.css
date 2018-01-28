@@ -1035,12 +1035,12 @@ footer .connect-us ul li a:hover {
 }
 
 /* Weather CSS section */
-#weather-icon {
+#userWeatherIcon {
 	height: 30px;
 	width: 30px;
 }
 
-#temperature {
+#userTemperature {
 	color: white;
 	width: 30px;
 	height: 30px;
@@ -1048,7 +1048,7 @@ footer .connect-us ul li a:hover {
 	letter-spacing: 1px;
 }
 
-#city {
+#userCity {
 	color: white;
 	width: 25px;
 	height: 25px;
@@ -1057,7 +1057,7 @@ footer .connect-us ul li a:hover {
 	letter-spacing: 1px;
 }
 
-#state {
+#userState {
 	color: white;
 	width: 25px;
 	height: 25px;
