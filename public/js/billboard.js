@@ -19,13 +19,13 @@
 //             console.log(response);
 //       }, false);
 // });  
-var billboard = require('billboard-top-100').getChart;
+// var billboard = require('billboard-top-100').getChart;
 
-billboard('hot-100', '2016-08-27', function(songs, err) {
-    if(err) console.log(err);
-    console.log(songs);
-    console.log(songs[3]);
-})
+// billboard('hot-100', '2016-08-27', function(songs, err) {
+//     if(err) console.log(err);
+//     console.log(songs);
+//     console.log(songs[3]);
+// })
 
 // var corsProxy = 'https://cors-anywhere.herokuapp.com/' //can I pass in a mode: 'no-cors' object in place of this proxy?
 // var billboardURL = 'https://www.npmjs.com/package/billboard-top-100'
