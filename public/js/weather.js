@@ -43,13 +43,14 @@ var weatherData = {
       console.log(location);
       console.log("Your region/state name is: " + location.regionName);
         var regionName = location.regionName;
-        var cityName = location.city;
-        weatherData.city.innerHTML = cityName + "," + " ";
         weatherData.state.innerHTML = regionName;
+        var cityName = location.city;
+        
+        
         //Now that we have the location data we can pass this within our DarkSky Ajax call
         var darkSkyURL = 'https://api.darksky.net/forecast/'
         // To bypass the Cross Domain Error, can I pass in an object of mode: 'no-cors' as my proxy variable?
-        var corsProxy = 'http://cors-anywhere.herokuapp.com/' //can I pass in a mode: 'no-cors' object in place of this proxy?
+        var corsProxy = 'https://cors-anywhere.herokuapp.com/' //can I pass in a mode: 'no-cors' object in place of this proxy?
         var apiKey = '845ff6b003aba8bd1a9434ab040ef79c/' 
         var units = '/?units=si'
         var locationData = location.lat + "," + location.lon; 
@@ -62,15 +63,17 @@ var weatherData = {
               //set our initial temperature to Fahrenheit due to the response data return the unit of celsius as the response data
               var weatherTemperature = (roundTemperature((response.currently.temperature) * 9/5 + 32));
               
-              weatherData.temperatureValue = weatherTemperature;
-              weatherData.temperature.innerHTML = weatherTemperature + weatherData.units;
-
               var userWeatherIcon = response.currently.icon;
               console.log('Your icon code is:' + ' ' + response.currently.icon);
               /* Set icons to the value of specific Skycons functions*/
               var icons = new Skycons({"color": "white"});
               icons.add(document.getElementById('userWeatherIcon'), userWeatherIcon);
               icons.play();
+
+              weatherData.temperatureValue = weatherTemperature;
+              weatherData.city.innerHTML = cityName + "," + " ";
+              weatherData.temperature.innerHTML = weatherTemperature + weatherData.units;
+
         }, false);
   });  
 
