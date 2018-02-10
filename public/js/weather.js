@@ -39,8 +39,9 @@ var weatherData = {
       console.log(location);
       console.log("Your region/state name is: " + location.regionName);
         var regionName = location.regionName;
-        weatherData.state.innerHTML = regionName + ", ";
         var cityName = location.city;
+        weatherData.city.innerHTML = cityName + "," + " ";
+        weatherData.state.innerHTML = regionName;
         //Now that we have the location data we can pass this within our DarkSky Ajax call
         var darkSkyURL = 'https://api.darksky.net/forecast/'
         // To bypass the Cross Domain Error, can I pass in an object of mode: 'no-cors' as my proxy variable?
@@ -59,12 +60,11 @@ var weatherData = {
 
               var userWeatherIcon = response.currently.icon;
               /* Set icons to the value of specific Skycons functions*/
-              var icons = new Skycons({"color": "white"});
-              icons.add(document.getElementById('userWeatherIcon'), userWeatherIcon);
-              icons.play();
+              // var icons = new Skycons({"color": "white"});
+              // icons.add(document.getElementById('userWeatherIcon'), userWeatherIcon);
+              // icons.play();
               
               weatherData.temperatureValue = weatherTemperature;
-              weatherData.city.innerHTML = cityName;
               weatherData.temperature.innerHTML = weatherTemperature + weatherData.units;
         }, false);
   });  
