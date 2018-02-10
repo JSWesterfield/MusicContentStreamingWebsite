@@ -579,16 +579,22 @@
                     <br>
                     <div  class="connect-us">
                         <h4>Weather</h4>
-                        <ul>
-                            <li><img id="userWeatherIcon" src="img/custom/weather-icon-02.png" alt="weather_icon"></img></li>
-                            <li><h4 id="userTemperature">42°F</h4></li>
-                            
+                        <ul id="weather-header-space">
+                            <li>
+                                <figure class="icons">
+                                    <canvas id="userWeatherIcon" width="50" height="50" src="img/custom/weather-icon-02.png" height="32" alt="weather">
+                                    </canvas>
+                                </figure>
+                            </li>
+                            <!-- <li><img id="userWeatherIcon" src="img/custom/weather-icon-02.png" alt="weather_icon"></img></li> -->
+                            <li><h3 id="userTemperature">42°F</h3></li>
                         </ul>
                         <ul>
                             <li><i id="userCity">Current City,</i><i id="userState">Current State</i></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-md-2 col-sm-12">
                     <div class="connect-us">
                         <h4>Let's Get Social</h4>
@@ -626,8 +632,9 @@
         </div>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
@@ -636,11 +643,11 @@
 
     <script src="js/weather.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> -->
     
     <!-- 1st script tag Defines Skycons, 2nd defines the css selectors on my page-->
     <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
-    <script src="js/weatherIcons.js"></script>
+    <!-- <script src="js/weatherIcons.js"></script> -->
 
     <script type="text/javascript">
     $(document).ready(function() {

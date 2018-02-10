@@ -1066,4 +1066,6 @@ footer .connect-us ul li a:hover {
 	letter-spacing: 1px;
 }
 
-
+#weather-header-space {
+	margin-top:0px!important;
+} 

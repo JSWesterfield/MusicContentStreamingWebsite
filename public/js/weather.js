@@ -1,3 +1,7 @@
+var userWeatherData = {
+
+}
+
 var weatherData = {
     city: document.querySelector ("#userCity"),
     state: document.querySelector ("#userState"), 
@@ -57,15 +61,16 @@ var weatherData = {
               var weatherDescription = response.currently.summary;
               //set our initial temperature to Fahrenheit due to the response data return the unit of celsius as the response data
               var weatherTemperature = (roundTemperature((response.currently.temperature) * 9/5 + 32));
-
-              var userWeatherIcon = response.currently.icon;
-              /* Set icons to the value of specific Skycons functions*/
-              // var icons = new Skycons({"color": "white"});
-              // icons.add(document.getElementById('userWeatherIcon'), userWeatherIcon);
-              // icons.play();
               
               weatherData.temperatureValue = weatherTemperature;
               weatherData.temperature.innerHTML = weatherTemperature + weatherData.units;
+
+              var userWeatherIcon = response.currently.icon;
+              console.log('Your icon code is:' + ' ' + response.currently.icon);
+              /* Set icons to the value of specific Skycons functions*/
+              var icons = new Skycons({"color": "white"});
+              icons.add(document.getElementById('userWeatherIcon'), userWeatherIcon);
+              icons.play();
         }, false);
   });  
 
