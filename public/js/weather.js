@@ -35,6 +35,7 @@ var weatherData = {
       weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units + " ";
   }
   //https://api.darksky.net/forecast/845ff6b003aba8bd1a9434ab040ef79c/37.8267,-122.4233
+
   // get geolocation data from ip via ip-api.com
   var getIP = 'http://ip-api.com/json/';
   //Dark Sky API key: 845ff6b003aba8bd1a9434ab040ef79c 
@@ -45,7 +46,6 @@ var weatherData = {
         var regionName = location.regionName;
         weatherData.state.innerHTML = regionName;
         var cityName = location.city;
-        
         
         //Now that we have the location data we can pass this within our DarkSky Ajax call
         var darkSkyURL = 'https://api.darksky.net/forecast/'
