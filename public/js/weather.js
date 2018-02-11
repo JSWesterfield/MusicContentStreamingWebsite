@@ -37,7 +37,7 @@ var weatherData = {
   //https://api.darksky.net/forecast/845ff6b003aba8bd1a9434ab040ef79c/37.8267,-122.4233
 
   // get geolocation data from ip via ip-api.com
-  var getIP = 'http://ip-api.com/json/';
+  var getIP = '//ip-api.com/json/';
   //Dark Sky API key: 845ff6b003aba8bd1a9434ab040ef79c 
   $.getJSON(getIP).done(function(location) {
       //show location object in console, to pull out 'regionName' or the state for rendering in html
